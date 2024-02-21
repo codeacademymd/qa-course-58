@@ -39,7 +39,7 @@ Then:Ar trebui sa fie redirectionat la pagina de creare cont
 Given: Utiliatorul se afla la pagina de creare cont 
 When: Utilizatorul nu completeaza vreun placeholder obligatoriu 
 And: Da click butonul albastru “Next”
-Then: Ar trebui sa vada eroare
+Then: Ar trebui sa vada eroare 
 
 
 
