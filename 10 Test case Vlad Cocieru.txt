@@ -1,0 +1,97 @@
+Description:
+                            Given: Utilizatorul se află pe pagina principala
+                    Feature: Crearea contului si logarea utilizatorului
+         Scenariu 1: Utilizatorul nou poate crea un cont
+    When: Utilizatorul da click pe butonul "Joint Today"
+And: Utilizatorul tapeaza in placeholder-ul "First name:" textul "vlad"
+And: Utilizatorul tapeaza in placeholder-ul "Last name:" textul "it"
+And: Utilizatorul tapeaza in placeholder-ul "Email address:" textul "vladit2024@gmail.com"
+And: Utilizatorul va da click pe dropdown button de la sectiunea "Month" din categoria "Date of birth:" si va selecta luna "January"  
+And: Utilizatorul va da click pe dropdown button de la sectiunea "Day" din categoria "Date of birth:" si va selecta data "01"  
+And: Utilizatorul va da click pe dropdown button de la sectiunea "Year" din categoria "Date of birth:" si va selecta anul "1984"
+And: Utilizatorul va da click pe butonul "Next: Location >"
+And: Utilizatorul va fi directionat pentru completarea datelor, pe pagina "Step 2:"
+And: Utilizatorul va tapa in placeholder-ul "Zip or Postal Code:" textul "2000", celelalte date fiind autocompletate   
+And: Utilizatorul va da click pe butonul "Next:Devices >"
+And: Utilizatorul va fi directionat pentru completarea datelor, pe pagina "Step 3:"
+And: Utilizatorul va da click pe dropdown button din placeholder-ul "Select Brand" de la sectiunea "Your Mobile Device:" si va alege brandul "Samsung"
+And: Utilizatorul va da click pe dropdown button din placeholder-ul "Select Model" de la sectiunea "Model:" si va alege modelul "Galaxy A53 5G"
+And: Utilizatorul va da click pe dropdown button din placeholder-ul "Select OS" de la sectiunea "Operating System:" si va alege sistemul de operare "Android 12"
+And: Utilizatorul va da click pe butonul "Next: Last Step >"
+And: Utilizatorul va tapa in cimpul de text "Create your uTest password" textul "123456789Abc" 
+And: Utilizatorul va tapa in cimpul de text "Confirm password" textul "123456789Abc"
+And: Utilizatorul va da click pe Checkbox-ul "STAY INFORMED! (optional)"
+And: Utilizatorul va da click pe Checkbox-ul "I have a read and accept the uTest Terms of Use and the uTest Guidelines"
+And: Utilizatorul va da click pe Checkbox-ul "I have read and accept the Privacy&Security Policy"
+And: Utilizatorul va da click pe butonul "Complete Setup"
+Then:Utilizatorul ar trebui sa creeze cu succes un cont
+    When: Utilizatorul da click pe butonul "Become a uTester" de pe baner-ul "The Largest Community of Testers in the World"
+And: Utilizatorul fiind directionat la pagina de configurare a contului va urma toti pasii si va completa dalele solicitate
+Then: Utilizatorul ar trebui sa creeze cu succes un cont
+    When: Utilizatorul da click pe butonul "Become a uTester" de pe baner-ul "Ready to Start Testing?"
+And: Utilizatorul fiind directionat la pagina de configurare a contului va urma toti pasii si va completa dalele solicitate
+Then: Utilizatorul ar trebui sa creeze cu succes un cont
+    When: Utilizatorul da click pe butonul "Sign Me Up!" dupa ca va face scroll in jos
+And: Utilizatorul fiind directionat la pagina de configurare a contului va urma toti pasii si va completa dalele solicitate
+Then: Utilizatorul ar trebui sa creeze cu succes un cont
+        Scenariu 2: Utilizatorul fara cont inregistrat nu se poate loga:
+    When: Utilizatorul da click pe butonul "Log In"
+And: Utilizatorul tapeaza in placeholder-ul "Email Address:" textul "vladit2024@gmail.com"
+And: Utilizatorul tapeaza in placeholder-ul "Password:" textul "123456789Abc" 
+And: Utilizatorul da click pe butonul "Sign in"  
+Then: Utilizatorul ar trebui sa vada pe aceeasi pagina un mesaj de atentionare cu textul "Invalid username or password"
+        Scenariu 3: Utilizatorul cu un cont creat se poate loga
+    When: Utilizatorul da click pe butonul "Log In"
+And: Utilizatorul tapeaza in placeholder-ul "Email Address:" textul "vladit2024@gmail.com"
+And: Utilizatorul tapeaza in placeholder-ul "Password:" textul "123456789Abc" 
+And: Utilizatorul da click pe butonul "Sign in"  
+Then: Utilizatorul ar trebui sa fie logat si directionat la pagina principala
+       Scenariu 4: Autodetectarea și autocompletarea datelor
+    When: Utilizatorul da click pe butonul "Join Today"
+And: Utilizatorul tapeaza in placeholder-ul "First name:" textul "vlad"
+And: Utilizatorul tapeaza in placeholder-ul "Last name:" textul "it"
+And: Utilizatorul tapeaza in placeholder-ul "Email address:" textul "vladit2024@gmail.com"
+And: Utilizatorul va da click pe dropdown button de la sectiunea "Month" din categoria "date of birth:" si va selecta luna "January"  
+And: Utilizatorul va da click pe dropdown button de la sectiunea "Day" din categoria "date of birth:" si va selecta data "01"  
+And: Utilizatorul va da click pe dropdown button de la sectiunea "Year" din categoria "date of birth:" si va selecta anul "1984"
+And: Utilizatorul va da click pe butonul "Next: Location >"
+Then: Utilizatorul ar trebui să fie redirecționat la o altă pagină pentru completarea datelor și fiindu-i detectată locația, datele privind țara și orașul ar trebui să fie autocompletate   
+    When: Utilizatorul da click pe butonul "Join Today"
+And: Utilizatorul urmeaza toti paii si completeaza toate datele solicitate 
+And: Utilizatorul  va da click pe butonul "Next: Location >" 
+And: Utilizatorul tapeaza in placeholder-ul "Zip or Postal Code:" textul "2000", celelalte cimpuri de text fiind autocompletate 
+And: Utilizatorul va da click pe butonul "Next:Devices >"
+Then: Utilizatorul ar trebui să fie redirecționat la o altă pagină pentru completarea datelor și fiindu-i detectat calculatorul, datele privind sistemul de operare, iteratia sistemului de operare si limba preselectata, aceste date ar trebui sa fie autocompletate
+         Scenariu 5: Utilizatorul va putea modifica datele autodetectate si autocompletate
+    When: Utilizatorul da click pe butonul "Join Today"
+And: Utilizatorul tapeaza in placeholder-ul "First name:" textul "vlad"
+And: Utilizatorul tapeaza in placeholder-ul "Last name:" textul "it"
+And: Utilizatorul tapeaza in placeholder-ul "Email address:" textul "vladit2024@gmail.com"
+And: Utilizatorul va da click pe dropdown button de la sectiunea "Month" din categoria "date of birth:" si va selecta luna "January"  
+And: Utilizatorul va da click pe dropdown button de la sectiunea "Day" din categoria "date of birth:" si va selecta data "01"  
+And: Utilizatorul va da click pe dropdown button de la sectiunea "Year" din categoria "date of birth:" si va selecta anul "1984"
+And: Utilizatorul va da click pe butonul "Next: Location >"
+And: Utilizatorul va fi directionat pentru completarea datelor, pe pagina "Step 2:"
+And: Utilizatorul va da click pe pictograma "X" din cimpul de text autocompletat cu textul "Chisinau"
+And: Utilizatorul va tapa in cimpul de text "City:" textul "London" 
+And: Utilizatorul va da clic pe dropdown button a cimpului de text din sectiunea "Country:" autocompletat cu textul "Moldova, Republic of"
+And: Utilizatorul va selecta tara "Algeria"
+And: Utilizatorul va da click pe cimpul de text din sectiunea "Zip or Postal Code:"
+And: Utilizatorul va tapa textul "SW1A2AA"
+And: Utilizatorul va da click pe butonul "Next:Devices >"
+Then: Utilizatorul ar trebui să fie directionat pentru completarea datelor, pe pagina "Step 3:"
+                   Feature: Functionalitatile paginii corespund asteptarilor utilizatorului final
+        Scenariu 1: Utilizatorul poate accesa butoanele din header 
+     Wen: Utilizatorul da click pe butonul "Why uTest"
+Then: Utilizatorul ar trebui sa fie directionat pe pagina "Why uTest?"  
+     Wen: Utilizatorul da click pe butonul "About us"
+Then: Utilizatorul ar trebui sa fie directionat pe pagina "About Us"
+     Wen: Utilizatorul da click pe butonul "Projects"
+Then: Utilizatorul ar trebui sa fie directionat pe pagina "Projects Board"
+     Wen: Utilizatorul da click pe butonul "Log In"
+Then: Utilizatorul ar trebui sa fie directionat pe pagina de logare
+     Wen: Utilizatorul da click pe butonul "Join Today"
+Then: Utilizatorul ar trebui sa fie directionat pe pagina pentru crearea contului
+     Wen: Utilizatorul da click pe orice buton
+And: Utilizatorul da click pe Logo-ul "UTest"
+Then: Utilizatorul ar trebui sa fie directionat pe pagina principala
