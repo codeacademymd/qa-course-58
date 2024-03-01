@@ -1,0 +1,53 @@
+Titlu: Utilizatorul nu primeste mesaj pe email de resetare a parolei
+Descriere: Utilizatorul nu primeste mesaj pe email de resetare a parolei de pe desktop pe Firefox
+
+Pre-condiții:
+
+- dispozitiv desktop conectat la rețeaua de alimentare sau este încărcat
+
+- sistem de operare 
+
+- conexiune la rețeaua de internet
+
+- browser Firefox
+
+- cont de utilizator existent și logat
+
+Mediu de testare: www.utest.com, setat în limba engleză.
+
+Pașii de reproducere:
+
+1. Pornește dispozitivul
+
+2. Conectează-te la rețeaua de internet
+
+3. Deschide browser-ul Firefox
+
+4. Tapează textul ” www.utest.com„ în secțiunea de căutare
+
+5. Apasă tasta ”Enter”
+
+6. Dă click pe elementul ”Log In”
+
+7. Dă click pe elementul ”Sign In”
+
+8. Dă click pe elementul ”Forgot Password?”
+
+9. Tapează în placeholder-ul ”jsmith@example.com” adresa de email
+
+10. Dă click pe butonul ”Reset password”
+
+
+Rezultatul așteptat: Utilizatorul primeste mesaj pe email de resetare a parolei de pe desktop pe Firefox
+
+Rezultatul actual: Utilizatorul nu primeste mesaj pe email de resetare a parolei de pe desktop pe Firefox
+
+Atașament: 1.jpg
+
+Încercări de repetare: 0
+
+Numele programatorului: Igor
+
+Severitate: Joasă
+
+Prioritate: Medie
