@@ -1,0 +1,32 @@
+Description: The user can create an account.
+Pre-conditions:
+* device, conected to a power source or a battery
+* operation system
+* internet conection
+* browser
+* Environment: ‘'www.utest.com’’ set in english
+Steps to reproduce:
+1. turn on the computer
+2. conect to the internet
+3. open the browser
+4. type the text  ‘‘utest.com ’' in the search bar
+5. press the Enter key
+6. click on button ‘’Join Today’’
+7. type ‘’Midoni’’ in placeholder ‘’First name’’
+8. type ‘’Lidia’’ in placeholder ‘Last name’’
+9. type ‘’lidiamidoni24@gmail.com’’ in placeholder ‘’Email address’’
+10. select the month ‘’June’’ from the element ‘’Date of birth’’ 
+11. select the day ‘’6’’ from the element ‘’Date of birth’’
+12. select the year ‘’1998’’ from the element ‘’Date of birth’’
+13. select ‘’Russian’’ from the element ‘’Languages (spoken)’’
+14. select ‘’Romanian’’  from the element ‘’Languages (spoken)’’
+15. click on ‘’Next Location’’ button
+16. type ‘’MD-6813’’ in placeholder ‘’Zip or Postal Code’’
+17. click on ‘’Next Step’’ button 
+Expected results: The user can create an account.
+Actual results: The user can not create an account.
+Attachment: jpg.56
+Attempts to repeat: 0
+Name of developer: Ana
+Severity: high
+Priority: high
