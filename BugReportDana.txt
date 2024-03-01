@@ -1,0 +1,22 @@
+Denumire: Utilizatorul nu poate accesa pagina de logare
+Descriere: Utilizatorul nu poate accesa pagina de logare prin butonul „Join Today” 
+Pre-condiții:
+•	dispozitiv, conectat la rețeaua de alimentare sau pe baterie
+•	sistem de operare
+•	conexiune la internet
+•	browser
+Mediu de testare: https://www.utest.com/, setat în limba engleza
+Pași de reproducere:
+1.	Pornește dispozitivul
+2.	Conectează-te la rețeaua de internet
+3.	Deschide browser-ul
+4.	Tapeaza textul https://www.utest.com/  în secțiunea de căutare
+5.	Dă click pe spațiul de text pentru căutare
+6.	Da click pe butonul „Join Today”
+Rezultatul asteptat: Accesare pagina de logare prin butonul „Join Today”
+Rezultatul actual: Se afiseaza pagina cu eroare 404 
+Atasament: img.1
+Încercari de repetare: 0
+Numele programator: Ion
+Severitatea: medium
+Prioritatea: medium

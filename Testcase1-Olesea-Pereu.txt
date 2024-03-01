@@ -1,0 +1,136 @@
+﻿Feature: Funcționalitați importante 
+Scenario1: Utilizatorul poate creea contul cu success
+Given: Utiliz-ul se află pe pagina principală
+When Utiliz-ul apasa butonul “Join Today”
+And Utiliz-ul este redicționat pe pagina de inregistrare
+And Utiliz-ul introduce textul ”Olesea” în secțiunea “First name”
+And Utiliz-ul introduce textul ”Pereu” în secțiunea “Last name”
+And Utiliz-ul introduce textul ”alessea111@gmail.com” în secțiunea “Address email ”
+And Utiliz-ul selecteaza dropdown list Month “December”
+And Utiliz-ul selecteaza dropdown list Day “21”
+And Utiliz-ul selecteaza dropdown list Year“1989”
+And Utiliz-ul apasă butonul “Next:Llocation”
+And Utiliz-ul introduce textul ”Nenagh ” in sectiunea “Zip or Post Code”
+And Utiliz-ul selectează dropdown list Country  “Ireland”
+And Utiliz-ul apasă butonul “Next: Devices”
+And Utiliz-ul apasa butonul “Next:Last Step”
+And Utiliz-ul introduce textul “123456”în secțiunea de “Password”
+And Utiliz-ul re-introduce textul “123456”în secțiunea de “Confirm password”
+And Utiliz-ul selecteaza “I have read and accept the Terms of Use and the Test Guidelines”
+And Utiliz-ul selecteaza “I have read and accept the “Privacy & Securitu Policy”
+And Utiliz-ul Apasa butonul “Complet Setup”
+Then Util-ul ar trebui săfie redectionat pe pagina  cu urmatorul text: “Welcome to the worlds lagest community of freelevel software testers!”
+When Utiliz-ul dă click ”Projects” 
+And Utiliz-ul dă click “Do you own a Readme C35 Mobile Device? ” Ongoing Project 
+And Utiliz-ul selectează una din opțiunile disponibile 
+And Utiliz-ul dă click ”Join uTest” 
+And Utiliz-ul este redicționat pe pagina de inregistrare
+And Utiliz-ul introduce textul ”Olesea” în secțiunea “First name”
+And Utiliz-ul introduce textul ”Pereu” în secțiunea “Last name”
+And Utiliz-ul introduce textul ”alessea111@gmail.com” în secțiunea “Address email ”
+And Utiliz-ul selecteaza dropdown list Month “December”
+And Utiliz-ul selecteaza dropdown list Day “21”
+And Utiliz-ul selecteaza dropdown list Year“1989”
+And Utiliz-ul apasă butonul “Next:Llocation”
+And Utiliz-ul introduce textul ”Nenagh ” in sectiunea “Zip or Post Code”
+And Utiliz-ul selectează dropdown list Country  “Ireland”
+And Utiliz-ul apasă butonul “Next: Devices”
+And Utiliz-ul apasă butonul “Next:Last Step”
+And Utiliz-ul introduce textul “123456”în secțiunea de “Password”
+And Utiliz-ul re-introduce textul “123456”în secțiunea de “Confirm password”
+And Utiliz-ul selectează “I have read and accept the Terms of Use and the Test Guidelines”
+And Utiliz-ul selectează “I have read and accept the “Privacy & Securitu Policy”
+And Utiliz-ul apasă butonul “Complet Setup”
+Then Util-ul ar trebui să fie redicționat pe pagina  cu urmatorul text: “Welcome to the worlds lagest community of freelevel software testers!”
+When Utiliz-ul apasă butonul ”Become a uTester”
+And Utiliz-ul este redicționat pe pagina de inregistrare
+And Utiliz-ul introduce textul ”Olesea” în secțiunea “First name”
+And Utiliz-ul introduce textul ”Pereu” în secțiunea “Last name”
+And Utiliz-ul introduce textul ”alessea111@gmail.com” în secțiunea “Address email ”
+And Utiliz-ul selecteaza dropdown list Month “December”
+And Utiliz-ul selecteaza dropdown list Day “21”
+And Utiliz-ul selecteaza dropdown list Year“1989”
+And Utiliz-ul apasă butonul “Next:Location”
+And Utiliz-ul introduce textul ”Nenagh ” in sectiunea “Zip or Post Code”
+And Utiliz-ul selectează dropdown list Country  “Ireland”
+And Utiliz-ul apasă butonul “Next: Devices”
+And Utiliz-ul apasă butonul “Next:Last Step”
+And Utiliz-ul introduce textul “123456”în secțiunea de “Password”
+And Utiliz-ul re-introduce textul “123456”în secțiunea de “Confirm password”
+And Utiliz-ul selectează “I have read and accept the Terms of Use and the Test Guidelines”
+And Utiliz-ul selectează “I have read and accept the “Privacy & Securitu Policy”
+And Utiliz-ul apasă butonul “Complet Setup”
+Then Util-ul ar trebui să fie redictionat pe pagina  cu urmatorul text: “Welcome to the worlds lagest community of freelevel software testers!”
+
+Scenario2: Utilizatorulnu poate creea contul cu succes
+Given: Utiliz-ul se află pe pagina principală
+When Utiliz-ul butonul “Join today”
+And Utiliz-ul introduce textul ”O” în secțiunea “First name”
+And Utiliz-ul introduce textul ”Pereu” în secțiunea “Last name”
+And Utiliz-ul introduce textul ”alessea111@gmail.com” în secțiunea “Address email ”
+And Utiliz-ul selecteaza dropdown list Month “December”
+And Utiliz-ul selecteaza dropdown list Day “21”
+And Utiliz-ul selecteaza dropdown list Year“1989”
+And Utiliz-ul apasă butonul “Next:Location”
+Then Utiliz-ul ar trebui să vadă erroarea “Between 2 and 50 characters required” in secțiunea “First Name”
+And Utiliz-ul  nu poate fi redicționat pe  următoarea pagina de inregistrare
+When Utiliz-ul apasă butonul “Become a uTester”
+And Utiliz-ul este redicționat pe pagina de inregistrare
+And Utiliz-ul introduce textul ”Olesea” în secțiunea “First name”
+And Utiliz-ul introduce textul ”Pereu” în secțiunea “Last name”
+And Utiliz-ul introduce textul ”alessea111.gmail.com” în secțiunea “Address email ”
+And Utiliz-ul selecteaza dropdown list Month “December”
+And Utiliz-ul selecteaza dropdown list Day “21”
+And Utiliz-ul selecteaza dropdown list Year“1989”
+And Utiliz-ul apasă butonul “Next:Location”
+Then Utiliz-ul ar trebui să vadă erroarea “Enter valid Email” în secțiunea de “email”
+And Utiliz-ul  nu poate fi redicționat pe următoarea pagina de inregistrare
+When Util-ul dă scroll pină la sfîrșitul pagenii
+And apasă butonul “Become a uTester”
+And Utiliz-ul introduce textul ”Olesea” în secțiunea “First name”
+And Utiliz-ul introduce textul ”Pereu@1213?” în secțiunea “Last name”
+And Utiliz-ul introduce textul ”alessea111@gmail.com” în secțiunea “Address email ”
+And Utiliz-ul selecteaza dropdown list Month “December”
+And Utiliz-ul selecteaza dropdown list Day “21”
+And Utiliz-ul selecteaza dropdown list Year“1989”
+And Utiliz-ul apasă butonul “Next:Location”
+Then Utiliz-ul ar trebui să vadă erroarea “No special characters”în secțiunea de „Last Name”
+And Utiliz-ul  nu poate fi redicționat pe următoarea pagina de inregistrare
+
+Scenario 3: Utilizatorul poate fi logat
+Given: Utiliz-ul se află pe pagina principală
+When utiliz-ul apasă butonul ”Log In”
+And Utiliz-ul introduce textul “alessea111@gmail.com “în secțiunea de „email”
+And And Utiliz-ul introduce textul “123456”în secțiunea de “Password”
+And Utiliz-ur apasă butonul “Sign In”
+And Utiliz-ul da click pe emailul trimis de uTest
+And Utiliz-ul apasă butonul”Confirm address”
+Then Utiliz-ul ar trebui să fie logat 
+And Utiliz-ul ar trebui să fie redicționat pe pagina contului „Olesea Pereu”
+When Utiliz-ul dă click  “Projects” pe bara din meniu
+And Utiliz-ul selectează” Inclusive Design and Assistive Technology Ambasador – Be a SpokesPerson!”in calitatea de “Ongoing Projects”
+And Utiliz-ul dă scroll pîna la sfîrșitul pagenii 
+And Utiliz-ul selectează opțiunea “Sign In ”
+And Utiliz-ul introduce textul “alessea111@gmail.com “în secțiunea de „email”
+And And Utiliz-ul introduce textul “123456”în secțiunea de “Password”
+And Utiliz-ur apasă butonul “Sign In”
+Then Utiliz-ul ar trebui să fie logat 
+And Utiliz-ul ar trebui să fie redicționat pe pagina contului „Olesea Pereu”
+
+Scenario 4: Utilizatorul nu  poate fi logat
+Given: Utilizatorul se află pe pagina de logare
+When Utiliz-ul nu introduce nimic in secțiunele de “Email ”and “Parola”
+And apasă butonul “Sign In”
+Then Utiliz-ul ar trebui sa vadă eroare “Invalid username and password”
+Given: Utiliz-ul se află pe pagina principală
+When Utiiz-ul apasă butonul “Sign In ”
+Then utiliz-ul ar trebui să fie redicționat pe pagina cu următorul mesaj “Kong Eror”
+
+
+
+
+
+
+
+
+

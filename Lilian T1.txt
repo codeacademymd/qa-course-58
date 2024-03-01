@@ -1,0 +1,43 @@
+Feature:  Disponibilitatea utilizatorului de a crea cont personal  
+
+Scenario 1: Utilizatorul poate introduce datele personale pe pagina „ Become a uTester”  
+
+Given Utilizatorul  se află pe pagina „ Become a uTester”  
+
+When Utilizatorul introdece textul „Ion” in  placeholder-ul „ First name „
+Then  Utilizatorul  ar trebui sa vada in  placeholder-ul „ First name „ textul „Ion” si elementul „check”
+
+When Utilizatorul introdece textul „Creaga” in  placeholder-ul „ Laste name „
+Then  Utilizatorul  ar trebui sa vada in  placeholder-ul „Laste name „ textul „Creaga” si elementul „check”
+
+When Utilizatorul introdece textul „IonCreaga@gmail.com” in  placeholder-ul „ Email address  „
+Then  Utilizatorul  ar trebui sa vada in  placeholder-ul „Email address „ textul IonCreaga@gmail.com si elementul „check”
+
+
+When Utilizatorul da clic pe dropdown din caseta „ Month” 
+And Utilizatorul selecteaza subgategoria „May” 
+Then  Utilizatorul  ar trebui sa vada in  caseta „ Month” textul „May”
+
+When Utilizatorul da clic pe dropdown din caseta „ Day ” 
+And Utilizatorul selecteaza subgategoria „5” 
+Then  Utilizatorul  ar trebui sa vada in  caseta „Day” subgategoria „5” 
+
+When Utilizatorul da clic pe dropdown din caseta „ Year ” 
+And Utilizatorul selecteaza subgategoria „2000” 
+Then  Utilizatorul  ar trebui sa vada in  caseta „Year” subgategoria „2000” 
+
+
+When Utilizatorul da clic pe caseta  „Languages”
+And Utilizatorul da clic pe elementul „Romanian”
+Then  Utilizatorul  ar trebui sa vada in  caseta „Languages” subcategoriile „English”  si  „Romanian”
+
+
+Scenario 2: Utilizatorul nu poate introduce datele personale pe pagina „ Become a uTester”  folosinduse doar de initiale
+
+Given Utilizatorul  se află pe pagina „ Become a uTester”  
+
+When Utilizatorul introdece textul „I” in  placeholder-ul „First name „
+Then  Utilizatorul  ar trebui sa vada in  placeholder-ul „ First name „ textul „I” cu elementul „!” si mesajul „Between 2 and 50 characters required”
+
+When Utilizatorul introdece textul „C” in  placeholder-ul „Laste name „
+Then  Utilizatorul  ar trebui sa vada in  placeholder-ul „Laste name „ textul „C” cu elementul „!” si mesajul „Between 2 and 50 characters required”

@@ -1,0 +1,43 @@
+Descriere: Utilizatorul nu este redirectionat pe Facebook cand apasa pictograma Facebook
+
+Pre-condiții: 
+
+dispozitiv conectat la rețeaua de alimentare sau pe baterie
+
+sistem de operare
+
+conexiune la rețeaua de internet
+
+browser
+
+Mediu de testare: www.utest.com setat in engleza
+
+Pașii de testare:
+
+Pornește dispozitivul
+
+Conectează-te la rețeaua de internet
+
+Deschide browser-ul 
+
+Tapează textul "www.utest.com" în secțiunea de căutare
+
+Apasă tasta "Enter" 
+
+Dă scroll spre sfarsitul paginii
+
+Dă click pe pictograma "Facebook"
+
+Rezultatul așteptat: Utilizatorul este redirectionat spre pagina Facebook
+
+Rezultatul actual: Utilizatorul nu este redirectionat pe Facebook cand apasa pictograma Facebook
+
+Atașament: 1.jpg
+
+Încercări de repetare: 0
+
+Numele programatorului: Valeriu
+
+Severitate: Joasă
+
+Prioritate: Joasă
