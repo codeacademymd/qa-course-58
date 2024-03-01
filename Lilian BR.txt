@@ -1,0 +1,28 @@
+Descriere: Utilizatorul  nu poate  folosi pentru inregistrare un Email cu terminatia  - .ru 
+Pre-conditii:
+•	Dispozitiv  conectat la reteaua de alimentare sau pe baterie
+•	Sistem de operare
+•	Conexiune la reteaua de internet
+•	Browser 
+Mediu de testare: “www.utest.com”setat in engleza
+Pasii de testare: 
+1.	Porneste dispositivul mobil
+2.	Conectaza-te la reteaua de internet
+3.	Deschide browser-ul 
+4.	Tapeaza textul “www.utest.com ” in sectiunea de cautare
+5.	Apasa tasta “Enter”
+6.	Da clic pe butonul “ Become a uTester”
+7.	In categoria “First Name” tapeaza “Ion”
+8.	In categoria “ Last Name” tapeaza “Dobani”
+9.	In categoria “Month”  selecteaza “May”
+10.	In categoria “ Day” selecteaza “ 15”
+11.	In categoria “ Year” selecteaza “2004”
+12.	In categoria “Email address” tapeaza “ Iondoibani24@mail.ru”
+13.	Da clic pe butonul “Next Location”
+Rezultatul asteptat: Utilizatorul   poate  folosi pentru inregistrare un Email cu terminatia  - .ru
+Rezultatul actual: Utilizatorul  nu  poate  folosi pentru inregistrare un Email cu terminatia  - .ru
+Atasament: 1.jpg
+Repetari : 0
+Nume programator: Jhon 
+Severitate: Inalta
+Preoritate: Medie
