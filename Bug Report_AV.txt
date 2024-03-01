@@ -1,0 +1,58 @@
+ID: 1
+
+Summary: User can create an account indicating age older than 200 years
+
+Description: User can create an account indicating age older than 200 years
+
+Pre-conditions:
+1. Device connected to a power source or an battery
+2. Operating system
+3. Internet connection
+4. Browser
+5. User logged in to personal e-mail account
+
+Environment: www.utest.com, set in English
+
+Steps to reproduce:
+1. Turn on the device
+2. Connect to the internet
+3. Open the browser
+4. Type "www.utest.com" in the browser search section
+5. Press "Enter" key
+6. Press “Join Today” button
+7. Type “Ana” in the “First name” section
+8. Type “Visanu” in the “Last name” section
+9. Type "ana.visanu@gmail.com" in the "E-mail address" section
+10.Select "January" in the dropdown menu referring to month
+11. Selects "1" in the dropdown menu referring to day
+12. Select "1809" in the dropdown menu referring to Year
+13. Press "Next: Location" button
+14. Type "MD-2000" in the "Zip or Postal Code:" section
+15. Press "Next: Devices" button
+16. Press "Next: Last Step" button
+17. Type "VejQ6898&" in the "Create your uTest password" section
+18. Type "VejQ6898&" in the "Confirm password" section
+19. Tick "I have read and accept the uTerms of Use and the uTest Guidelines"
+20. Tick "I have read and accept the Privacy & Security Policy"
+21. Press "Complete Setup" button
+22. Open a new tab
+23. Type "www.gmail.com" in the search section
+24. Press "Enter" key
+25. Click on message sent by uTest
+26. Click on "Confirm email address" in the message
+
+Expected result: User can not create an account indicating age older than 200 years
+
+Actual result: User can create an account indicating age older than 200 years
+
+Attachment: 10.jpg
+
+Attempts to repeat: 0
+
+Name of the developer: X.X.
+
+Date & Time: March 1, 2024, 8:30 PM
+
+Severity: Low
+
+Priority: Low
