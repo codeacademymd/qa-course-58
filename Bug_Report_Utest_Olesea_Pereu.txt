@@ -1,0 +1,24 @@
+﻿Descriere: Utilizatorul nu poate sa se  logheze
+Pre-conditii:
+· dispozitiv desktop conectat la reteaua de alimentare sau pe baterie
+· sistem de operare
+· conexiune la reteaua de internet
+· browser
+· utilizator existent 
+Mediu de testare:  https://utest.com , setat in limba engleza
+Pasii de reproducere:
+1. Porneste dispozitivul
+2. Conecteaza-te la reteaua de internet
+3. Deschide browser-ul
+4. Tapeaza in sectiunea de cautare https://utest.com 
+5. Apasa tasta “Enter”
+6. Da click pe butonul ”Log In”
+
+Rezultatul asteptat: Utilizatorul  poate sa se  logheze
+Rezultatul actual: Utilizatorul nu poate sa se  logheze
+Atasament: 1.jpg
+Încercari de repetare: 0
+Numele programator: Andrei
+Severitatea: Low
+Prioritatea: High
+
