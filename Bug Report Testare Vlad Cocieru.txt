@@ -1,0 +1,36 @@
+ID. QC5-235
+Titlu:Utilizatorul nu poate modifica datele autocompletate
+Descrierea: Utilizatorul la crearea contului nu poate modifica datele autocompletate precum Țara și orașul 
+Pre-condiții:
+* Dispozitiv conectat la rețeaua de alimentare sau baterie
+* Sistem de operare
+* Conexiune la rețeaua de internet
+* Browser
+Enviorment: www.utest.com setat în limba engleză
+Pași de reproducere:
+1. Pornește dispozitivul
+2. Conectează-te la rețeaua de internet
+3. Deschide browser-ul
+4. Tapează textul ”www.utext.com”
+5. Apasă tasta ”Enter”
+6. Dă click pe butonul ”Join Today” 
+7. Tapează în placeholder-ul "First name:" textul "vlad"
+8. Tapează în placeholder-ul "Last name:" textul "it"
+9. Tapează în placeholder-ul "Email address:" textul "vladit2024@gmail.com"
+10. Dă click pe dropdown button de la secțiunea "Month" din categoria "Date of birth:" și selectează luna "January"  
+11. Dă click pe dropdown button de la secțiunea "Day" din categoria "Date of birth:" și selectează data "01"  
+12. Dă click pe dropdown button de la secțiunea "Year" din categoria "Date of birth:" și selectează anul "1984"
+13. Dă click pe butonul "Next: Location >"
+14. Fiind direcționat pentru completarea datelor, pe pagina "Step 2:" dă click pe pictograma "X" din cîmpul de text autocompletat cu textul "Chisinau"
+15. Tapează textul ”London”
+16. Dă click pe dropdown button a cîmpului de text din secțiunea "Country:" autocompletat cu textul "Moldova, Republic of"
+17. Selectează țara "Algeria"
+Rezultatele așteptate: Utilizatorul nu poate modifica datele autocompletate
+Rezultatul actual: Utilizatorul poate modifica datele autocompletate
+Atașamente: a.png, 1.png
+Încercări de repetare: 0
+Nume Qa: Cocieru Vlad / Nume developer: Sergiu
+Data: 01.03.2024 / Ora: 21.20
+Severitate: LOW
+Prioritate: Low
+
